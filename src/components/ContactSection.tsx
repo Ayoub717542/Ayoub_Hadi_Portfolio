@@ -102,7 +102,7 @@ export const ContactSection: React.FC = () => {
                 </div>
               </div>
             </div>
-
+            
             {/* Quick Link Buttons */}
             <div className="pt-4 space-y-2">
               <a

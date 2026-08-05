@@ -1,5 +1,6 @@
 import React from 'react';
 import { FileText, Linkedin, Github, ExternalLink, ArrowRight, MapPin, Briefcase, Sparkles, CheckCircle2 } from 'lucide-react';
+import heroImage from '../images/heroPicture.jpg';
 import { candidateProfile } from '../data/portfolioData';
 
 export const HeroSection: React.FC = () => {
@@ -123,25 +124,37 @@ export const HeroSection: React.FC = () => {
 
           {/* Visual Profile Card (5 Cols) */}
           <div className="lg:col-span-5 relative">
-            <div className="bg-[#151A21] border border-[#242A33] rounded-2xl p-6 shadow-2xl relative group hover:border-[#8B5CF6]/50 transition-colors">
+            <div className="bg-[#151A21] border border-[#242A33] rounded-2xl overflow-hidden shadow-2xl relative group hover:border-[#8B5CF6]/50 transition-colors">
               
+              {/* Hero Image */}
+              <div className="relative overflow-hidden rounded-b-none rounded-2xl">
+                <img
+                  src={heroImage}
+                  alt="Hero profile"
+                  className="w-full h-[340px] sm:h-[380px] md:h-[420px] object-cover object-center filter brightness-90 transition duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0B0F14]/90 via-transparent to-transparent pointer-events-none"></div>
+              </div>
+
               {/* Profile Avatar Container */}
-              <div className="relative mb-6">
-                <div className="w-28 h-28 mx-auto rounded-2xl bg-gradient-to-tr from-[#8B5CF6] via-indigo-600 to-[#3B82F6] p-1 shadow-xl">
-                  <div className="w-full h-full bg-[#0B0F14] rounded-xl flex items-center justify-center text-4xl font-extrabold text-white">
-                    HA
-                  </div>
+              <div className="relative -mt-16 px-6">
+                <div className="mx-auto w-32 h-32 rounded-3xl bg-[#0B0F14] p-1 shadow-xl ring-1 ring-[#8B5CF6]/40">
+                  <img
+                    src={heroImage}
+                    alt="Profile"
+                    className="w-full h-full rounded-3xl object-cover"
+                  />
                 </div>
                 
                 {/* Status Badge on Profile */}
-                <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-[#0B0F14] border border-[#242A33] px-3 py-1 rounded-full text-[11px] font-bold text-gray-300 shadow-md flex items-center gap-1.5 whitespace-nowrap">
+                <div className="absolute left-1/2 top-full -translate-x-1/2 mt-2 bg-[#0B0F14] border border-[#242A33] px-3 py-1 rounded-full text-[11px] font-bold text-gray-300 shadow-md flex items-center gap-1.5 whitespace-nowrap">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
                   <span>Full-Stack Verified</span>
                 </div>
               </div>
 
               {/* Bio Highlights */}
-              <div className="text-center space-y-3">
+              <div className="text-center space-y-3 px-6 pt-24 pb-6">
                 <h3 className="text-xl font-bold text-white">{candidateProfile.fullName}</h3>
                 <p className="text-xs text-[#8B5CF6] font-semibold tracking-wide uppercase">
                   Junior Software Engineer
@@ -152,7 +165,7 @@ export const HeroSection: React.FC = () => {
               </div>
 
               {/* Floating Tech Badges */}
-              <div className="mt-6 pt-4 border-t border-[#242A33] flex flex-wrap justify-center gap-2">
+              <div className="mt-6 pt-4 border-t border-[#242A33] px-6 pb-6 flex flex-wrap justify-center gap-2">
                 {['Spring Boot', 'React', 'Spring Security', 'JWT', 'Redis', 'Docker', 'MySQL', 'PostgreSQL'].map((tech) => (
                   <span
                     key={tech}
