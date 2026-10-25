@@ -9,7 +9,7 @@
   --color-ink: #161514;     /* text */
   --color-muted: #6b665e;   /* secondary text */
   --color-line: #dcd6cb;    /* borders */
-  --color-accent: #d9480f;  /* the one accent color */
+  --color-accent: #1e40af;  /* the one accent color (dark blue) */
 
   /* Arabic font is in every stack: Latin text keeps its font, Arabic uses IBM Plex Sans Arabic */
   --font-sans: "Inter", "IBM Plex Sans Arabic", system-ui, sans-serif;
@@ -24,7 +24,7 @@
     --color-ink: #ece8e1;
     --color-muted: #9c968c;
     --color-line: #2c2a27;
-    --color-accent: #ff7a3d;
+    --color-accent: #5b8def;
   }
 }
 
