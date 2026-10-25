@@ -5,19 +5,19 @@
     "fr": {
       "title": "Hadi Ayoub — Développeur Full-Stack Junior (Java · React · IA)",
       "description": "Portfolio de Hadi Ayoub, développeur Full-Stack junior à Béni Mellal : API REST Spring Boot, sécurité JWT, React et IA (Spring AI, RAG). Disponible pour un CDI ou un stage.",
-      "image": "/og/og-fr.png",
+      "image": "/og/og-fr.jpg",
       "locale": "fr_FR"
     },
     "en": {
       "title": "Hadi Ayoub — Junior Full-Stack Developer (Java · React · AI)",
       "description": "Portfolio of Hadi Ayoub, junior full-stack developer in Béni Mellal, Morocco: Spring Boot REST APIs, JWT security, React and AI (Spring AI, RAG). Open to full-time roles and internships.",
-      "image": "/og/og-en.png",
+      "image": "/og/og-en.jpg",
       "locale": "en_US"
     },
     "ar": {
       "title": "Hadi Ayoub — مطوّر Full-Stack مبتدئ (Java · React · الذكاء الاصطناعي)",
       "description": "معرض أعمال هادي أيوب، مطوّر Full-Stack مبتدئ في بني ملال: واجهات REST بـ Spring Boot، أمان JWT، React والذكاء الاصطناعي (Spring AI، RAG). متاح لوظيفة دائمة أو تدريب.",
-      "image": "/og/og-en.png",
+      "image": "/og/og-en.jpg",
       "locale": "ar_MA"
     }
   }
