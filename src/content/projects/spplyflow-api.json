@@ -26,6 +26,5 @@
   ],
   "tech": ["Spring Boot", "Spring Data JPA", "Spring Security", "MapStruct", "Docker Compose", "Swagger"],
   "github": "https://github.com/Ayoub717542",
-  "demo": "",
-  "image": ""
+  "demo": ""
 }

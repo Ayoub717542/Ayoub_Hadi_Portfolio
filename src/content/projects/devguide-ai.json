@@ -1,0 +1,50 @@
+{
+  "title": "DevGuide AI",
+  "year": 2026,
+  "order": 1,
+  "featured": true,
+  "summary": {
+    "en": "An AI programming tutor that teaches one concept at a time, checks current library documentation before answering, reads your own PDFs and screenshots, and shows where every answer comes from.",
+    "fr": "Un tuteur de programmation IA qui enseigne un concept à la fois, vérifie la documentation actuelle de la bibliothèque avant de répondre, lit vos propres PDF et captures d'écran et montre d'où vient chaque réponse.",
+    "ar": "مدرّس برمجة بالذكاء الاصطناعي يقوم بتدريس مفهوم واحد في كل مرة، ويتحقق من وثائق المكتبة الحالية قبل الإجابة، ويقرأ ملفات PDF ولقطات الشاشة الخاصة بك، ويوضح من أين تأتي كل إجابة."
+  },
+  "highlights": [
+    {
+      "en": "RAG over uploaded PDFs with Qdrant, with answers that cite the file and page range",
+      "fr": "RAG sur les PDF téléchargés avec Qdrant, avec des réponses qui citent le fichier et la plage de pages",
+      "ar": "RAG على ملفات PDF التي تم تحميلها مع Qdrant، مع إجابات تستشهد بالملف ونطاق الصفحة"
+    },
+    {
+      "en": "Live documentation and GitHub code access through MCP tools (Context7, GitHub)",
+      "fr": "Documentation en direct et accès au code GitHub via des outils MCP (Context7, GitHub)",
+      "ar": "التوثيق المباشر والوصول إلى كود GitHub من خلال أدوات MCP (Context7، GitHub)"
+    },
+    {
+      "en": "Debugging from a screenshot with Gemini Vision",
+      "fr": "Débogage à partir d'une capture d'écran avec Gemini Vision",
+      "ar": "تصحيح الأخطاء من لقطة شاشة باستخدام Gemini Vision"
+    },
+    {
+      "en": "Generates PDF and DOCX cheat sheets on demand through an AI tool",
+      "fr": "Génère à la demande des fiches mémo PDF et DOCX via un outil d'IA",
+      "ar": "إنشاء ملخّصات مرجعية بصيغة PDF وDOCX عند الطلب عبر أداة ذكاء اصطناعي"
+    },
+    {
+      "en": "JWT security where every conversation and file is private to its owner",
+      "fr": "Sécurité JWT : chaque conversation et chaque fichier restent privés à leur propriétaire",
+      "ar": "أمان JWT حيث تبقى كل محادثة وكل ملف خاصّين بصاحبهما"
+    }
+  ],
+  "tech": [
+    "Java 25",
+    "Spring Boot 4",
+    "Spring AI",
+    "Gemini",
+    "Qdrant",
+    "MCP",
+    "MySQL",
+    "React"
+  ],
+  "github": "https://github.com/Ayoub717542/DevGuide_AI",
+  "demo": ""
+}

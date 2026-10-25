@@ -15,13 +15,14 @@ export interface Project {
   slug: string; // file name without .json, e.g. "healthcare-app"
   title: Text;
   year: number;
+  order?: number; // 1 = shown first. Projects without "order" come after.
   featured?: boolean;
   summary: Text;
   highlights?: Text[];
   tech: string[];
   github?: string;
   demo?: string;
-  image?: string;
+  image?: string; // found automatically: projects/<slug>.png|jpg|jpeg|webp
 }
 
 export interface Job {
@@ -69,15 +70,29 @@ const projectFiles = import.meta.glob<Omit<Project, 'slug'>>(
   { eager: true, import: 'default' },
 );
 
+// A picture with the same name as the project file is its image,
+// e.g. projects/healthcare-app.png goes with projects/healthcare-app.json.
+const imageFiles = import.meta.glob<string>('./projects/*.{png,jpg,jpeg,webp}', {
+  eager: true,
+  import: 'default',
+});
+const fileName = (path: string) => path.split('/').pop()!.replace(/\.\w+$/, '');
+const images = Object.fromEntries(Object.entries(imageFiles).map(([path, url]) => [fileName(path), url]));
+
 export const projects: Project[] = Object.entries(projectFiles)
-  .map(([path, data]) => ({ slug: path.split('/').pop()!.replace('.json', ''), ...data }))
+  .map(([path, data]) => ({ ...data, slug: fileName(path), image: images[fileName(path)] }))
   .filter((p) => {
     const ok = p.title && p.summary && p.year;
     if (!ok) console.warn(`Project "${p.slug}" is missing title, summary or year — skipped.`);
     return ok;
   })
-  // Featured first, then newest first.
-  .sort((a, b) => Number(!!b.featured) - Number(!!a.featured) || b.year - a.year);
+  // By "order" first, then featured, then newest.
+  .sort(
+    (a, b) =>
+      (a.order ?? Infinity) - (b.order ?? Infinity) ||
+      Number(!!b.featured) - Number(!!a.featured) ||
+      b.year - a.year,
+  );
 
 // Pick the right language from a Text, falling back to English.
 export function tr(text: Text, lang: Lang): string {

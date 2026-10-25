@@ -26,6 +26,5 @@
   ],
   "tech": ["Spring Boot", "Spring Security", "JWT", "JPA / Hibernate", "Redis", "React", "Docker", "Mockito"],
   "github": "https://github.com/Ayoub717542",
-  "demo": "https://magenta-entremet-131f7e.netlify.app/",
-  "image": ""
+  "demo": ""
 }

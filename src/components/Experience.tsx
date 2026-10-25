@@ -1,14 +1,15 @@
 import { education, formatPeriod, work } from '../content';
 import { useLang } from '../i18n';
-import { Section, Tags } from './ui';
+import { Heading, Page, Tags } from './ui';
 
 export function Experience() {
   const { lang, t, tr } = useLang();
   const period = (start: string, end: string | null) => formatPeriod(start, end, lang, t('present'));
 
   return (
-    <Section id="experience" index="02" title={t('experience')}>
-      <ol className="space-y-12">
+    <Page id="experience">
+      <Heading index="02" title={t('experience')} />
+      <ol className="space-y-10">
         {work.map((job) => (
           <li key={job.company + job.start} className="grid gap-2 sm:grid-cols-[9rem_1fr] sm:gap-6">
             <p className="pt-1 font-mono text-xs text-muted">{period(job.start, job.end)}</p>
@@ -23,8 +24,8 @@ export function Experience() {
         ))}
       </ol>
 
-      <h3 className="label mt-16">{t('education')}</h3>
-      <ol className="mt-6 space-y-6">
+      <h3 className="label mt-12">{t('education')}</h3>
+      <ol className="mt-5 space-y-5">
         {education.map((study) => (
           <li key={study.school + study.start} className="grid gap-1 sm:grid-cols-[9rem_1fr] sm:gap-6">
             <p className="pt-0.5 font-mono text-xs text-muted">{period(study.start, study.end)}</p>
@@ -35,6 +36,6 @@ export function Experience() {
           </li>
         ))}
       </ol>
-    </Section>
+    </Page>
   );
 }

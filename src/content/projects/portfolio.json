@@ -1,0 +1,36 @@
+{
+  "title": "Personal Portfolio",
+  "year": 2026,
+  "order": 3,
+  "featured": false,
+  "summary": {
+    "en": "The site you are looking at: a fast static portfolio in three languages, where all content lives in simple JSON files so a new project is added in minutes.",
+    "fr": "Le site que vous consultez : un portfolio statique rapide en trois langues, où tout le contenu réside dans de simples fichiers JSON, de sorte qu'un nouveau projet est ajouté en quelques minutes.",
+    "ar": "الموقع الذي تتصفّحه: معرض أعمال سريع بثلاث لغات، حيث يوجد كل المحتوى في ملفات JSON بسيطة بحيث تتم إضافة مشروع جديد في دقائق."
+  },
+  "highlights": [
+    {
+      "en": "English, French and Arabic, with right-to-left layout and a smooth language switch",
+      "fr": "Anglais, français et arabe, avec une mise en page de droite à gauche et un changement de langue fluide",
+      "ar": "الإنجليزية والفرنسية والعربية، مع تخطيط من اليمين إلى اليسار وتبديل سلس بين اللغات"
+    },
+    {
+      "en": "A new project is one JSON file and one picture, loaded automatically",
+      "fr": "Un nouveau projet est un fichier JSON et une image, chargés automatiquement",
+      "ar": "المشروع الجديد هو ملف JSON واحد وصورة واحدة، يتم تحميلها تلقائيًا"
+    },
+    {
+      "en": "A small script that translates missing texts automatically",
+      "fr": "Un petit script qui traduit automatiquement les textes manquants",
+      "ar": "سكريبت صغير يترجم النصوص الناقصة تلقائيًا"
+    }
+  ],
+  "tech": [
+    "React",
+    "TypeScript",
+    "Vite",
+    "Tailwind CSS"
+  ],
+  "github": "https://github.com/Ayoub717542/Ayoub_Hadi_Portfolio",
+  "demo": ""
+}

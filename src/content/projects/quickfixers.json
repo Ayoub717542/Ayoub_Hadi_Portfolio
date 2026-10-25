@@ -1,0 +1,51 @@
+{
+  "title": "QuickFixers – Repair Service Platform",
+  "year": 2026,
+  "order": 2,
+  "featured": true,
+  "summary": {
+    "en": "A full-stack platform for repair services: clients open tickets, support agents fix them, and admins manage users, services, payments and statistics.",
+    "fr": "Une plateforme full-stack pour les services de réparation : les clients ouvrent des tickets, les agents de support les réparent et les administrateurs gèrent les utilisateurs, les services, les paiements et les statistiques.",
+    "ar": "منصة متكاملة لخدمات الإصلاح: يفتح العملاء التذاكر، ويقوم وكلاء الدعم بإصلاحها، ويقوم المشرفون بإدارة المستخدمين والخدمات والمدفوعات والإحصاءات."
+  },
+  "highlights": [
+    {
+      "en": "Three roles (client, support, admin) secured with JWT and role-based access",
+      "fr": "Trois rôles (client, support, administrateur) sécurisés avec JWT et accès basé sur les rôles",
+      "ar": "ثلاثة أدوار (العميل، الدعم، المسؤول) مؤمنة باستخدام JWT والوصول القائم على الأدوار"
+    },
+    {
+      "en": "Real-time chat between clients and support with WebSocket",
+      "fr": "Chat en temps réel entre clients et support avec WebSocket",
+      "ar": "الدردشة في الوقت الحقيقي بين العملاء والدعم مع WebSocket"
+    },
+    {
+      "en": "Payments with PDF receipts and an admin dashboard with charts",
+      "fr": "Paiements avec reçus PDF et un tableau de bord d'administration avec des graphiques",
+      "ar": "المدفوعات مع إيصالات PDF ولوحة معلومات المسؤول مع الرسوم البيانية"
+    },
+    {
+      "en": "AI chatbot assistant built with Spring AI and Gemini",
+      "fr": "Assistant chatbot IA construit avec Spring AI et Gemini",
+      "ar": "مساعد دردشة بالذكاء الاصطناعي مبني باستخدام Spring AI و Gemini"
+    },
+    {
+      "en": "Docker setup, Flyway migrations and a GitHub Actions CI pipeline",
+      "fr": "Configuration Docker, migrations Flyway et pipeline CI GitHub Actions",
+      "ar": "إعداد Docker وترحيلات Flyway ومسار CI عبر GitHub Actions"
+    }
+  ],
+  "tech": [
+    "Spring Boot",
+    "Spring Security",
+    "JWT",
+    "WebSocket",
+    "MySQL",
+    "Redis",
+    "React",
+    "Tailwind CSS",
+    "Docker"
+  ],
+  "github": "https://github.com/Ayoub717542/QuickFixers-FullStack-Gestion-Services",
+  "demo": ""
+}
