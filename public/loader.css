@@ -8,13 +8,13 @@
   display: grid;
   place-items: center;
   background:
-    radial-gradient(55% 45% at 50% 45%, rgba(91, 141, 239, 0.32), transparent 70%),
-    linear-gradient(135deg, #0a0f22 0%, #13215a 50%, #0a0f22 100%);
+    radial-gradient(50% 40% at 50% 45%, rgba(59, 100, 200, 0.14), transparent 70%),
+    linear-gradient(135deg, #04060d 0%, #0a1229 50%, #04060d 100%);
   color: #e8ecf8;
   font-family: Inter, 'IBM Plex Sans Arabic', system-ui, sans-serif;
   transition: transform 0.9s cubic-bezier(0.76, 0, 0.24, 1);
   /* safety net: disappears by itself if the script never runs */
-  animation: loader-fallback 0.4s 5s forwards;
+  animation: loader-fallback 0.4s 7s forwards;
 }
 
 /* same dot grid as the site background, fading toward the edges */
@@ -22,7 +22,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(rgba(255, 255, 255, 0.13) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(255, 255, 255, 0.09) 1px, transparent 1px);
   background-size: 28px 28px;
   -webkit-mask-image: radial-gradient(65% 55% at 50% 50%, #000, transparent);
   mask-image: radial-gradient(65% 55% at 50% 50%, #000, transparent);

@@ -1,6 +1,6 @@
 // Loading screen (markup in index.html, styles in loader.css).
 // - texts in the visitor's language (same rules as src/i18n.tsx)
-// - progress bar + terminal-style steps, ~1.8 s; waits at 90% until the site says it's ready
+// - progress bar + terminal-style steps, ~3 s; waits at 90% until the site says it is ready
 // - shown once per visit, skipped for visitors who prefer reduced motion
 
 (function () {
@@ -48,7 +48,7 @@
     loader.appendChild(p);
   }
 
-  var DURATION = 1800;
+  var DURATION = 3000;
   var bar = loader.querySelector('.loader-bar span');
   var pct = loader.querySelector('.loader-pct');
   var step = loader.querySelector('.loader-step');
@@ -57,15 +57,15 @@
   var finished = false;
 
   document.addEventListener('app-ready', function () { ready = true; });
-  setTimeout(function () { ready = true; }, 4000); // never stay stuck
+  setTimeout(function () { ready = true; }, 5000); // never stay stuck
 
   function frame(now) {
     var t = Math.min((now - start) / DURATION, 1);
-    var progress = 1 - Math.pow(1 - t, 3); // ease-out
+    var progress = t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; // ease-in-out: each step stays readable
     if (!ready) progress = Math.min(progress, 0.9);
 
     bar.style.transform = 'scaleX(' + progress + ')';
-    pct.textContent = Math.round(progress * 100) + '%';
+    pct.textContent = Math.floor(progress * 100) + '%'; // 100% only together with the last step
     var last = text.steps.length - 1;
     step.textContent = text.steps[progress >= 1 ? last : Math.min(Math.floor(progress * last), last - 1)];
 
@@ -80,7 +80,7 @@
     setTimeout(function () {
       loader.classList.add('loader-hide');
       setTimeout(function () { loader.remove(); }, 1000);
-    }, 300); // let "Ready ✓" show for a moment
+    }, 500); // let "Ready ✓" show for a moment
   }
 
   requestAnimationFrame(frame);
