@@ -1,0 +1,20 @@
+<!doctype html>
+<!-- Template for the site icon ("HA" on the accent color). Rendered at 512×512, then resized.
+     ?square shows it without rounded corners (for the iPhone icon, which iOS rounds itself). -->
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  /* Bricolage Grotesque 800, only the letters H and A, embedded so the icon renders offline */
+  @font-face { font-family: "IconFont"; font-weight: 800; src: url(data:font/woff2;base64,d09GMgABAAAAAAUAABMAAAAACugAAASYAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGjsbgTYcKD9IVkFSPgZgP1NUQVSBKgBELywRCAqBcIFOCwoAMIFSATYCJAMQBCAFiEYHIAwHG28JyAQeqM76V9UVcaQeiksnWRDHL/sKY7Kxpjply7P4YOSs7PIpZsQZMQi7m+pVTQKC8DXC7TVygsU35sJFnkdzPwQaXhrlsYg6y6kfBMLAbM+kqHao8SmeYvOLWEmhCNnS1jOCc+2iwHqcqBPBD8qQNct86zFfeb1AYcGMZAirC2Zr7BgtQAV5lKuFsZeZDAbF+whtrQyROLKF3y6JTvgZugr3s+lQxN400qxerAWjDgrDZ1EDof4HCZQU2vHsyKdiUbtDy2oWNF9W0q7pGECekBNA91wn5igStXppMxqUknjnGk3enxpHeoZ4Cp0O7Zr5X0AdE+ciqZNuecmKjkMwm+9yhmIJ50D9ho3+HZe0bV0aWCmgfeuKlQFBL/tYzhR9NFFGFvF4s9AlLJpOLptFCEuxRbhZuE5y0ZHkpCDJQUqSnUi2ZZFArNghW8rjUOXgnBULm8uOUqSRjowHlkOCnwafCj6S/WAZ2F1EP1QIzCIN3uyFY0wAM0B+Y0QwiKuUhvLwDOore5AtW00NrfVSyhxrVpBg1WhwqcUOg33yhNhvO8m+sSuuvPXWW8X+G6wnrrsudOzGF20nX36cfbc9dNNNUbYFtlnrnHVmTDhwGGzKSZ+ZEg42/Wb87eoldTl1ez5uqKhoMAlad7z0/0ffaXZ71nscf86/pM2un42LP9+XnbQy+o+6TNR7F9959+KdF93GS+78gO96H/deuuZSronJMB1bcUw8vYzZ8XFj2cYV0MQQk0/RFDMTOuTGDxzJGY7kBF1GVlZmeurFKYmJKelpaRlpekpivHkgISk5Sadm/9Fkj8duNhfZPS7jf7//+vuf//xvdEHN8PvPP17zzbe//j0vlMV1kBtiLnJYHRk52YkRDq/X3EzZ/kNGgwGTEKaD/iEy2dHU1Nj4Ulyc0Ziby4L9RzU1P6/uB2PXPkL3HxRzedONV/tmFrhqfjdr2lemnXcd3dfOn/3o/YU/ooJvyLPyGcCoEvr8GO/EgfIiCiXPKoQG7UqOkXFmiNxNBq/mrUqRk7N5r8VBRbhw6jKqFFL1nAysFcGEjG2WOOV5RWOluCGjUgyMiQHFyBDzipMyXlLctHAo3YMXX1R8S7KnUBHY6VMkVlpWW65VrJipidjAWgJ2aw44rCngtMaCyxoKbqudQ96n7/axAR/rWMRaKiljIwHKKZq7S6jILj7mLqIktxDompRxVrH0spWMs4xVrGAlcT/JKpbwluv4u313sIxWtsFzPhbRxAbWspQmfF3cumwRK1iGTju+amKAZfjZxOb9YGwb6fejNwhc56eKfPLxs4QRrfjJ8yxryRN6vBXk008bPV4XoCAtQBvl7pePscyip74bWI9Ooe1bQAGFVGPHcgJswM/4maaAPCrJo5hi8liKl22hgmxWUEARHr6MQipZzizD/9bICD0MUR05DMkKNnPtvK8kC+6XN7MBeDsz6UR0iuQOLEJnhJWMy+KZBxBW8xIWaWSzDrHI8f3oZOhCVrDqbMdmFpPHXr6O/Ao5ZS2riofRRlZV8beTz+IocjL/4PnBy3ChQf+HRPDwXeo0AAA=) format("woff2"); }
+  html, body { margin: 0; width: 512px; height: 512px; background: transparent; overflow: hidden; }
+  .icon { width: 512px; height: 512px; border-radius: 116px; background: #d9480f; display: grid; place-items: center; }
+  .square .icon { border-radius: 0; }
+  span { font: 800 250px/1 "IconFont", sans-serif; color: #fff; letter-spacing: -0.02em; margin-top: -14px; }
+</style>
+</head>
+<body>
+  <div class="icon"><span>HA</span></div>
+  <script>if (location.search.includes('square')) document.body.className = 'square';</script>
+</body>
+</html>
