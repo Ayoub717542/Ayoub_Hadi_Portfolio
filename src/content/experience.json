@@ -1,0 +1,42 @@
+{
+  "work": [
+    {
+      "role": { "en": "Frontend Developer Intern", "fr": "Stagiaire Développeur Frontend", "ar": "متدرّب مطوّر واجهات أمامية" },
+      "company": "Web Agency (IT Services)",
+      "start": "2024-07",
+      "end": "2024-08",
+      "summary": {
+        "en": "Built responsive, accessible web pages with HTML, CSS and JavaScript, and worked with senior developers to match the designs.",
+        "fr": "Réalisation de pages web responsives et accessibles en HTML, CSS et JavaScript, en collaboration avec des développeurs seniors pour respecter les maquettes.",
+        "ar": "إنشاء صفحات ويب متجاوبة وسهلة الوصول باستخدام HTML وCSS وJavaScript، بالتعاون مع مطوّرين ذوي خبرة لمطابقة التصاميم."
+      },
+      "tech": ["HTML", "CSS", "JavaScript", "Git"]
+    }
+  ],
+  "education": [
+    {
+      "degree": { "en": "Full-Stack Java Developer Training", "fr": "Formation Développeur Full-Stack Java", "ar": "تكوين مطوّر Full-Stack بلغة Java" },
+      "school": "École Numérique Ahmed Al Hansali",
+      "start": "2025-09",
+      "end": null
+    },
+    {
+      "degree": { "en": "Specialized Technician Diploma (DTS) in Software Development", "fr": "DTS en Développement Informatique", "ar": "دبلوم تقني متخصص في تطوير المعلوميات" },
+      "school": "Institut BILLGATES",
+      "start": "2022",
+      "end": "2024"
+    },
+    {
+      "degree": { "en": "Bachelor's in English Studies – Linguistics", "fr": "Licence en Études Anglaises – Linguistique", "ar": "إجازة في الدراسات الإنجليزية – اللسانيات" },
+      "school": "Sultan Moulay Slimane University",
+      "start": "2020",
+      "end": "2023"
+    },
+    {
+      "degree": { "en": "Baccalaureate in Human Sciences", "fr": "Baccalauréat Sciences Humaines", "ar": "باكالوريا العلوم الإنسانية" },
+      "school": "Lycée Ibn Sina",
+      "start": "2019-09",
+      "end": "2020-06"
+    }
+  ]
+}

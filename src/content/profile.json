@@ -1,0 +1,36 @@
+{
+  "name": "Hadi Ayoub",
+  "role": {
+    "en": "Full-Stack Developer",
+    "fr": "Développeur Full-Stack",
+    "ar": "مطوّر ويب متكامل (Full-Stack)"
+  },
+  "stack": "Java · Spring Boot · React",
+  "location": {
+    "en": "Beni Mellal, Morocco",
+    "fr": "Béni Mellal, Maroc",
+    "ar": "بني ملال، المغرب"
+  },
+  "openToWork": true,
+  "lookingFor": {
+    "en": "Full-time job · Internship · Freelance",
+    "fr": "CDI · Stage · Freelance",
+    "ar": "وظيفة دائمة · تدريب · عمل حر"
+  },
+  "bio": {
+    "en": "I'm a junior full-stack developer who turns ideas into reliable web applications. I build secure REST APIs with Java and Spring Boot, and clean, responsive interfaces with React. I learn fast, love clean code, and enjoy shipping real projects from database to UI.",
+    "fr": "Développeur full-stack junior, je transforme des idées en applications web fiables. Je conçois des API REST sécurisées avec Java et Spring Boot, et des interfaces claires et responsives avec React. J'apprends vite, j'aime le code propre et livrer des projets concrets, de la base de données à l'interface.",
+    "ar": "مطوّر ويب متكامل مبتدئ، أحوّل الأفكار إلى تطبيقات ويب موثوقة. أبني واجهات برمجة REST آمنة باستخدام Java وSpring Boot، وواجهات مستخدم نظيفة ومتجاوبة باستخدام React. أتعلّم بسرعة، أحب الكود النظيف، وأستمتع بإنجاز مشاريع حقيقية من قاعدة البيانات إلى الواجهة."
+  },
+  "photo": "/images/profile.jpg",
+  "cv": "https://docs.google.com/document/d/1dAoeN-4yXrYV_7v82K91EG_iRKnmlKRxRQlhePkHEu4/edit?usp=sharing",
+  "email": "Ayoubhadi312@gmail.com",
+  "phone": "+212 670211432",
+  "github": "https://github.com/Ayoub717542",
+  "linkedin": "https://linkedin.com/in/ayoubhadi-pro",
+  "languages": [
+    { "name": { "en": "Arabic", "fr": "Arabe", "ar": "العربية" }, "level": { "en": "Native", "fr": "Langue maternelle", "ar": "اللغة الأم" } },
+    { "name": { "en": "English", "fr": "Anglais", "ar": "الإنجليزية" }, "level": { "en": "Fluent", "fr": "Courant", "ar": "بطلاقة" } },
+    { "name": { "en": "French", "fr": "Français", "ar": "الفرنسية" }, "level": { "en": "Intermediate", "fr": "Intermédiaire", "ar": "متوسط" } }
+  ]
+}

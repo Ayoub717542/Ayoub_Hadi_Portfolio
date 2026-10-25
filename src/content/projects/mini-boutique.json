@@ -1,0 +1,26 @@
+{
+  "title": "Mini Boutique – E-Commerce Store",
+  "year": 2024,
+  "featured": false,
+  "summary": {
+    "en": "A lightweight React storefront for small shops: browse products, search and filter, and manage a shopping cart.",
+    "fr": "Une boutique en ligne légère en React pour les petits commerces : catalogue, recherche, filtres et panier.",
+    "ar": "متجر إلكتروني خفيف بـ React للمحلات الصغيرة: تصفّح المنتجات، البحث والتصفية، وإدارة سلة المشتريات."
+  },
+  "highlights": [
+    {
+      "en": "Cart with live quantities and totals, saved in the browser",
+      "fr": "Panier avec quantités et totaux en temps réel, sauvegardé dans le navigateur",
+      "ar": "سلة مشتريات بكميات ومجاميع فورية، محفوظة في المتصفح"
+    },
+    {
+      "en": "Mobile-first responsive design",
+      "fr": "Design responsive pensé mobile d'abord",
+      "ar": "تصميم متجاوب يبدأ من الهاتف"
+    }
+  ],
+  "tech": ["React", "JavaScript", "CSS", "Vite"],
+  "github": "https://github.com/Ayoub717542",
+  "demo": "",
+  "image": ""
+}

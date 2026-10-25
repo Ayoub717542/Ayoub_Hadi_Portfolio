@@ -1,0 +1,22 @@
+[
+  {
+    "group": { "en": "Backend", "fr": "Backend", "ar": "الواجهة الخلفية" },
+    "items": ["Java", "Spring Boot", "Spring Security", "JWT", "Spring Data JPA", "Hibernate", "MapStruct", "Maven", "REST APIs"]
+  },
+  {
+    "group": { "en": "Frontend", "fr": "Frontend", "ar": "الواجهة الأمامية" },
+    "items": ["React", "JavaScript", "Tailwind CSS", "HTML", "CSS", "Thymeleaf", "Vite"]
+  },
+  {
+    "group": { "en": "Databases", "fr": "Bases de données", "ar": "قواعد البيانات" },
+    "items": ["PostgreSQL", "MySQL", "Redis", "SQL"]
+  },
+  {
+    "group": { "en": "DevOps & Tools", "fr": "DevOps & Outils", "ar": "DevOps والأدوات" },
+    "items": ["Docker", "Docker Compose", "Git", "GitHub Actions", "Linux", "Postman", "Swagger", "IntelliJ IDEA", "Figma"]
+  },
+  {
+    "group": { "en": "Practices", "fr": "Méthodes", "ar": "المنهجيات" },
+    "items": ["Agile / Scrum", "Unit testing (Mockito)", "Clean Code", "SOLID"]
+  }
+]

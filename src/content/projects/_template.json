@@ -1,0 +1,16 @@
+{
+  "title": "My New Project",
+  "year": 2026,
+  "featured": false,
+  "summary": {
+    "en": "One or two sentences: what it is and what problem it solves."
+  },
+  "highlights": [
+    { "en": "Something you built or are proud of" },
+    { "en": "Another highlight" }
+  ],
+  "tech": ["Spring Boot", "React", "PostgreSQL"],
+  "github": "https://github.com/Ayoub717542/my-new-project",
+  "demo": "",
+  "image": ""
+}

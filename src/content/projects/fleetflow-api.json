@@ -1,0 +1,31 @@
+{
+  "title": "FleetFlow – Delivery Management API",
+  "year": 2024,
+  "featured": true,
+  "summary": {
+    "en": "A REST API for delivery companies to manage clients, drivers, vehicles and the full delivery lifecycle, from pending to delivered.",
+    "fr": "Une API REST permettant aux sociétés de livraison de gérer clients, chauffeurs, véhicules et tout le cycle de livraison, de « en attente » à « livré ».",
+    "ar": "واجهة برمجة REST تتيح لشركات التوصيل إدارة العملاء والسائقين والمركبات ودورة التوصيل كاملة، من الانتظار حتى التسليم."
+  },
+  "highlights": [
+    {
+      "en": "Status workflow that blocks invalid transitions (Pending → Dispatched → In transit → Delivered)",
+      "fr": "Workflow de statuts qui bloque les transitions invalides (En attente → Expédiée → En transit → Livrée)",
+      "ar": "تسلسل حالات يمنع الانتقالات غير الصالحة (قيد الانتظار ← مُرسلة ← في الطريق ← تم التسليم)"
+    },
+    {
+      "en": "MapStruct DTO mapping to keep entities out of API responses",
+      "fr": "Mapping DTO avec MapStruct pour ne jamais exposer les entités",
+      "ar": "تحويل الكيانات إلى DTO عبر MapStruct لعدم كشفها في ردود الواجهة"
+    },
+    {
+      "en": "Secured endpoints, Swagger documentation and Docker setup",
+      "fr": "Endpoints sécurisés, documentation Swagger et Docker",
+      "ar": "نقاط وصول مؤمّنة، توثيق Swagger وإعداد Docker"
+    }
+  ],
+  "tech": ["Spring Boot", "Spring Data JPA", "Spring Security", "MapStruct", "Swagger", "Docker"],
+  "github": "https://github.com/Ayoub717542",
+  "demo": "",
+  "image": ""
+}

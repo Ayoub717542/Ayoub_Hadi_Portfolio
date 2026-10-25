@@ -1,0 +1,31 @@
+{
+  "title": "SpplyFlow – Logistics Management API",
+  "year": 2024,
+  "featured": false,
+  "summary": {
+    "en": "A Spring Boot API for supply-chain teams to track shipments, assign carriers and follow each delivery from warehouse to destination.",
+    "fr": "Une API Spring Boot permettant aux équipes logistiques de suivre les expéditions, d'affecter les transporteurs et de suivre chaque livraison de l'entrepôt à la destination.",
+    "ar": "واجهة برمجة بـ Spring Boot تمكّن فرق سلسلة الإمداد من تتبّع الشحنات وتعيين الناقلين ومتابعة كل توصيل من المستودع إلى الوجهة."
+  },
+  "highlights": [
+    {
+      "en": "Optimistic locking to keep data consistent during concurrent status updates",
+      "fr": "Verrouillage optimiste pour garder des données cohérentes lors de mises à jour simultanées",
+      "ar": "قفل تفاؤلي للحفاظ على اتساق البيانات أثناء التحديثات المتزامنة"
+    },
+    {
+      "en": "Role-restricted access with Spring Security",
+      "fr": "Accès restreint par rôle avec Spring Security",
+      "ar": "وصول مقيّد حسب الأدوار باستخدام Spring Security"
+    },
+    {
+      "en": "App and database containerized with Docker Compose",
+      "fr": "Application et base de données conteneurisées avec Docker Compose",
+      "ar": "التطبيق وقاعدة البيانات في حاويات عبر Docker Compose"
+    }
+  ],
+  "tech": ["Spring Boot", "Spring Data JPA", "Spring Security", "MapStruct", "Docker Compose", "Swagger"],
+  "github": "https://github.com/Ayoub717542",
+  "demo": "",
+  "image": ""
+}

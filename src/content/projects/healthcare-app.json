@@ -1,0 +1,31 @@
+{
+  "title": "HealthCare Management App",
+  "year": 2025,
+  "featured": true,
+  "summary": {
+    "en": "A full-stack platform for clinics to manage patients, doctor schedules, appointments and medical records, with secure role-based access.",
+    "fr": "Une plateforme full-stack permettant aux cliniques de gérer patients, plannings des médecins, rendez-vous et dossiers médicaux, avec un accès sécurisé par rôle.",
+    "ar": "منصة متكاملة تمكّن العيادات من إدارة المرضى ومواعيد الأطباء والحجوزات والملفات الطبية، مع وصول آمن حسب الأدوار."
+  },
+  "highlights": [
+    {
+      "en": "Stateless JWT authentication and role-based access with Spring Security",
+      "fr": "Authentification JWT stateless et contrôle d'accès par rôle avec Spring Security",
+      "ar": "مصادقة JWT بدون حالة وتحكّم في الوصول حسب الأدوار باستخدام Spring Security"
+    },
+    {
+      "en": "Redis caching to speed up heavy medical-history queries",
+      "fr": "Cache Redis pour accélérer les requêtes lourdes sur l'historique médical",
+      "ar": "تخزين مؤقت عبر Redis لتسريع الاستعلامات الثقيلة على السجل الطبي"
+    },
+    {
+      "en": "React dashboard, Swagger API docs, Mockito tests and Docker setup",
+      "fr": "Tableau de bord React, documentation Swagger, tests Mockito et Docker",
+      "ar": "لوحة تحكّم بـ React، توثيق Swagger، اختبارات Mockito وإعداد Docker"
+    }
+  ],
+  "tech": ["Spring Boot", "Spring Security", "JWT", "JPA / Hibernate", "Redis", "React", "Docker", "Mockito"],
+  "github": "https://github.com/Ayoub717542",
+  "demo": "https://magenta-entremet-131f7e.netlify.app/",
+  "image": ""
+}
