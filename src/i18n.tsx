@@ -4,6 +4,7 @@
 import { createContext, useContext, useEffect, useState, type ReactNode } from 'react';
 import { flushSync } from 'react-dom';
 import { tr, type Lang, type Text } from './content';
+import site from './content/site.json';
 
 export const languages: { code: Lang; label: string }[] = [
   { code: 'en', label: 'EN' },
@@ -79,8 +80,10 @@ export type UiKey = keyof typeof ui.en;
 
 const isLang = (value: string | null): value is Lang => value === 'en' || value === 'fr' || value === 'ar';
 
-// 1. a link like ?lang=fr  2. the visitor's last choice  3. the browser language  4. English
+// 1. a link like /fr/ or ?lang=fr  2. the visitor's last choice  3. the browser language  4. English
 function initialLang(): Lang {
+  const fromPath = location.pathname.split('/')[1];
+  if (isLang(fromPath)) return fromPath;
   const fromUrl = new URLSearchParams(location.search).get('lang');
   if (isLang(fromUrl)) return fromUrl;
   try {
@@ -100,9 +103,14 @@ interface LangContextValue {
 
 const LangContext = createContext<LangContextValue | null>(null);
 
+// Language, direction, tab title, description and address (/fr/, /en/, /ar/) follow the chosen language.
 function applyToPage(lang: Lang) {
   document.documentElement.lang = lang;
   document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+  document.title = site.pages[lang].title;
+  document.querySelector('meta[name="description"]')?.setAttribute('content', site.pages[lang].description);
+  const path = location.pathname.split('/')[1];
+  if (path === '' || isLang(path)) history.replaceState(null, '', `/${lang}/${location.hash}`);
 }
 
 export function LangProvider({ children }: { children: ReactNode }) {

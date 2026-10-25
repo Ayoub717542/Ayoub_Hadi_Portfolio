@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700..800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; }
+  body { width: 1200px; height: 630px; overflow: hidden; background: #f5f2ec; color: #161514; font-family: Inter, sans-serif; position: relative; }
+  .dots { position: absolute; inset: 0; background-image: radial-gradient(#dcd6cb 1.2px, transparent 1.2px); background-size: 22px 22px; mask-image: linear-gradient(90deg, transparent 45%, #000 100%); }
+  .wrap { position: relative; display: grid; grid-template-columns: 1fr 330px; gap: 64px; align-items: center; height: 100%; padding: 0 88px; }
+  .badge { display: inline-flex; align-items: center; gap: 12px; font-size: 24px; font-weight: 500; }
+  .badge i { width: 14px; height: 14px; border-radius: 50%; background: #10b981; box-shadow: 0 0 0 6px rgba(16,185,129,.18); display: block; }
+  h1 { font: 800 104px/0.95 'Bricolage Grotesque', sans-serif; letter-spacing: -0.03em; margin-top: 26px; }
+  .role { margin-top: 26px; font-size: 38px; font-weight: 600; }
+  .role span { color: #d9480f; }
+  .stack { margin-top: 36px; display: flex; flex-wrap: wrap; gap: 10px; }
+  .pill { display: inline-flex; align-items: center; gap: 8px; padding: 8px 13px; border: 1.5px solid #dcd6cb; border-radius: 10px; font: 500 18px 'JetBrains Mono', monospace; background: #f5f2ec; }
+  .pill img { width: 21px; height: 21px; }
+  .photo { width: 330px; height: 378px; border-radius: 18px; object-fit: cover; box-shadow: 16px 16px 0 #d9480f; }
+  .bar { position: absolute; left: 0; top: 0; bottom: 0; width: 14px; background: #d9480f; }
+</style>
+</head>
+<body>
+  <div class="dots"></div>
+  <div class="bar"></div>
+  <div class="wrap">
+    <div>
+      <p class="badge"><i></i><span id="open">Open to work</span></p>
+      <h1>Hadi Ayoub</h1>
+      <p class="role" id="role">Junior Full-Stack Developer</p>
+      <div class="stack">
+        <span class="pill"><img src="https://cdn.simpleicons.org/openjdk">Java</span>
+        <span class="pill"><img src="https://cdn.simpleicons.org/springboot">Spring Boot</span>
+        <span class="pill"><img src="https://cdn.simpleicons.org/react">React</span>
+        <span class="pill"><img src="https://cdn.simpleicons.org/spring">Spring AI</span>
+      </div>
+    </div>
+    <img class="photo" src="file:///C:/Users/pc/Desktop/Ayoub_Hadi_Portfolio/public/images/profile.jpg">
+  </div>
+  <script>
+    // ?lang=fr switches the texts to French
+    if (new URLSearchParams(location.search).get('lang') === 'fr') {
+      document.getElementById('open').textContent = 'Disponible · CDI · Stage';
+      document.getElementById('role').textContent = 'Développeur Full-Stack Junior';
+    } else {
+      document.getElementById('open').textContent = 'Open to work';
+    }
+  </script>
+</body>
+</html>
