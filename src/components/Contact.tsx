@@ -8,7 +8,7 @@ export function Contact() {
 
   return (
     <Page id="contact">
-      <Heading index="04" title={t('contact')} />
+      <Heading index="05" title={t('contact')} />
       <p className="font-display text-4xl font-extrabold tracking-tight sm:text-5xl">{t('contactTitle')}</p>
       <p className="mt-5 max-w-lg leading-relaxed text-muted">{t('contactText')}</p>
 

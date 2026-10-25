@@ -46,7 +46,7 @@ export function Projects() {
       {projects.map((project, i) => (
         <Page key={project.slug}>
           <Heading
-            index="03"
+            index="04"
             title={t('projects')}
             aside={
               // dir="ltr" keeps "02 / 07" in this order in Arabic too

@@ -7,7 +7,7 @@ import { useLang, type UiKey } from '../i18n';
 import { LanguageSwitcher } from './LanguageSwitcher';
 import { ExternalLink } from './ui';
 
-const sections: UiKey[] = ['about', 'experience', 'projects', 'contact'];
+const sections: UiKey[] = ['about', 'skills', 'experience', 'projects', 'contact'];
 
 // Which section is in the middle of the screen right now.
 function useActiveSection(ids: string[]) {

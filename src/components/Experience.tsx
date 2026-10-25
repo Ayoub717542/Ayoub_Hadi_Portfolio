@@ -8,7 +8,7 @@ export function Experience() {
 
   return (
     <Page id="experience">
-      <Heading index="02" title={t('experience')} />
+      <Heading index="03" title={t('experience')} />
       <ol className="space-y-10">
         {work.map((job) => (
           <li key={job.company + job.start} className="grid gap-2 sm:grid-cols-[9rem_1fr] sm:gap-6">
