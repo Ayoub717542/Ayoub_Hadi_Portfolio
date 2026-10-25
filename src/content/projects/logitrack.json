@@ -1,0 +1,39 @@
+{
+  "title": {
+    "en": "LogiTrack – Logistics Management App",
+    "fr": "LogiTrack – Application de gestion logistique",
+    "ar": "LogiTrack – تطبيق إدارة الخدمات اللوجستية"
+  },
+  "year": 2026,
+  "order": 5,
+  "featured": false,
+  "summary": {
+    "en": "An application to manage clients, products and orders, with a secured API and monitoring.",
+    "fr": "Une application de gestion des clients, produits et commandes, avec une API sécurisée et du monitoring.",
+    "ar": "تطبيق لإدارة العملاء والمنتجات والطلبات، مع واجهة برمجة تطبيقات آمنة ومراقبة."
+  },
+  "highlights": [
+    {
+      "en": "Role management and secured endpoints with Spring Security and JWT",
+      "fr": "Gestion des rôles et sécurisation des endpoints avec Spring Security et JWT",
+      "ar": "إدارة الأدوار وتأمين نقاط الوصول باستخدام Spring Security وJWT"
+    },
+    {
+      "en": "Monitoring with Spring Actuator, Micrometer, Prometheus and Grafana",
+      "fr": "Monitoring avec Spring Actuator, Micrometer, Prometheus et Grafana",
+      "ar": "المراقبة باستخدام Spring Actuator وMicrometer وPrometheus وGrafana"
+    }
+  ],
+  "tech": [
+    "Spring Boot",
+    "Spring Security",
+    "JPA",
+    "React",
+    "MySQL",
+    "Docker",
+    "Prometheus",
+    "Grafana"
+  ],
+  "github": "https://github.com/Ayoub717542/LogiTrack",
+  "demo": ""
+}

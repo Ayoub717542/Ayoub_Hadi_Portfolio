@@ -25,6 +25,6 @@
     }
   ],
   "tech": ["Spring Boot", "Spring Data JPA", "Spring Security", "MapStruct", "Swagger", "Docker"],
-  "github": "https://github.com/Ayoub717542",
+  "github": "https://github.com/Ayoub717542/FleetFlow-1",
   "demo": ""
 }

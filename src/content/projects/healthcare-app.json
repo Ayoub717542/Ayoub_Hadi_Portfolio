@@ -1,30 +1,44 @@
 {
-  "title": "HealthCare Management App",
+  "title": {
+    "en": "HealthCare – Medical Management App",
+    "fr": "HealthCare – Application de gestion médicale",
+    "ar": "HealthCare – تطبيق للتسيير الطبي"
+  },
   "year": 2025,
+  "order": 4,
   "featured": true,
   "summary": {
-    "en": "A full-stack platform for clinics to manage patients, doctor schedules, appointments and medical records, with secure role-based access.",
-    "fr": "Une plateforme full-stack permettant aux cliniques de gérer patients, plannings des médecins, rendez-vous et dossiers médicaux, avec un accès sécurisé par rôle.",
-    "ar": "منصة متكاملة تمكّن العيادات من إدارة المرضى ومواعيد الأطباء والحجوزات والملفات الطبية، مع وصول آمن حسب الأدوار."
+    "en": "A REST API and React app to manage patients, doctors, appointments and medical records.",
+    "fr": "Une API REST et une interface React pour gérer patients, médecins, rendez-vous et dossiers médicaux.",
+    "ar": "واجهة REST API وتطبيق React لإدارة المرضى والأطباء والمواعيد والسجلات الطبية."
   },
   "highlights": [
     {
-      "en": "Stateless JWT authentication and role-based access with Spring Security",
-      "fr": "Authentification JWT stateless et contrôle d'accès par rôle avec Spring Security",
-      "ar": "مصادقة JWT بدون حالة وتحكّم في الوصول حسب الأدوار باستخدام Spring Security"
+      "en": "JWT authentication and authorization with role management",
+      "fr": "Authentification et autorisation JWT avec gestion des rôles",
+      "ar": "مصادقة وتفويض JWT مع إدارة الأدوار"
     },
     {
-      "en": "Redis caching to speed up heavy medical-history queries",
-      "fr": "Cache Redis pour accélérer les requêtes lourdes sur l'historique médical",
-      "ar": "تخزين مؤقت عبر Redis لتسريع الاستعلامات الثقيلة على السجل الطبي"
+      "en": "Caching with Redis",
+      "fr": "Mise en cache avec Redis",
+      "ar": "التخزين المؤقت مع Redis"
     },
     {
-      "en": "React dashboard, Swagger API docs, Mockito tests and Docker setup",
-      "fr": "Tableau de bord React, documentation Swagger, tests Mockito et Docker",
-      "ar": "لوحة تحكّم بـ React، توثيق Swagger، اختبارات Mockito وإعداد Docker"
+      "en": "Containerized application environment with Docker",
+      "fr": "Environnement applicatif conteneurisé avec Docker",
+      "ar": "بيئة تطبيق داخل حاويات باستخدام Docker"
     }
   ],
-  "tech": ["Spring Boot", "Spring Security", "JWT", "JPA / Hibernate", "Redis", "React", "Docker", "Mockito"],
-  "github": "https://github.com/Ayoub717542",
+  "tech": [
+    "Spring Boot",
+    "Spring Security",
+    "JWT",
+    "JPA",
+    "Redis",
+    "React",
+    "Docker",
+    "Swagger"
+  ],
+  "github": "https://github.com/Ayoub717542/HealthCare-",
   "demo": ""
 }

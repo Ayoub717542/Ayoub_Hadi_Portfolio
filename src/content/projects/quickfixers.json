@@ -1,50 +1,55 @@
 {
-  "title": "QuickFixers – Repair Service Platform",
+  "title": {
+    "en": "QuickFixers – Support & Repair Platform",
+    "fr": "QuickFixers – Plateforme de support & réparation",
+    "ar": "QuickFixers – منصة الدعم والإصلاح"
+  },
   "year": 2026,
   "order": 2,
   "featured": true,
   "summary": {
-    "en": "A full-stack platform for repair services: clients open tickets, support agents fix them, and admins manage users, services, payments and statistics.",
-    "fr": "Une plateforme full-stack pour les services de réparation : les clients ouvrent des tickets, les agents de support les réparent et les administrateurs gèrent les utilisateurs, les services, les paiements et les statistiques.",
-    "ar": "منصة متكاملة لخدمات الإصلاح: يفتح العملاء التذاكر، ويقوم وكلاء الدعم بإصلاحها، ويقوم المشرفون بإدارة المستخدمين والخدمات والمدفوعات والإحصاءات."
+    "en": "A platform to manage repair services and tickets, with three roles: admin, support and client.",
+    "fr": "Une plateforme de gestion des services et tickets de réparation, avec trois rôles : admin, support et client.",
+    "ar": "منصة لإدارة خدمات الإصلاح والتذاكر، مع ثلاثة أدوار: المشرف والدعم والعميل."
   },
   "highlights": [
     {
-      "en": "Three roles (client, support, admin) secured with JWT and role-based access",
-      "fr": "Trois rôles (client, support, administrateur) sécurisés avec JWT et accès basé sur les rôles",
-      "ar": "ثلاثة أدوار (العميل، الدعم، المسؤول) مؤمنة باستخدام JWT والوصول القائم على الأدوار"
+      "en": "JWT authentication with ADMIN, SUPPORT and CLIENT roles",
+      "fr": "Authentification JWT et gestion des rôles ADMIN, SUPPORT et CLIENT",
+      "ar": "مصادقة JWT مع أدوار المشرف والدعم والعميل"
     },
     {
-      "en": "Real-time chat between clients and support with WebSocket",
-      "fr": "Chat en temps réel entre clients et support avec WebSocket",
-      "ar": "الدردشة في الوقت الحقيقي بين العملاء والدعم مع WebSocket"
+      "en": "Automatic ticket assignment to support agents by specialty and workload",
+      "fr": "Affectation automatique des tickets aux supports selon leur spécialité et leur charge de travail",
+      "ar": "تخصيص التذاكر تلقائيًا لوكلاء الدعم حسب التخصص وعبء العمل"
     },
     {
-      "en": "Payments with PDF receipts and an admin dashboard with charts",
-      "fr": "Paiements avec reçus PDF et un tableau de bord d'administration avec des graphiques",
-      "ar": "المدفوعات مع إيصالات PDF ولوحة معلومات المسؤول مع الرسوم البيانية"
+      "en": "Real-time messaging with WebSocket and new-message notifications",
+      "fr": "Messagerie en temps réel avec WebSocket et notifications de nouveaux messages",
+      "ar": "المراسلة في الوقت الفعلي باستخدام WebSocket وإشعارات الرسائل الجديدة"
     },
     {
-      "en": "AI chatbot assistant built with Spring AI and Gemini",
-      "fr": "Assistant chatbot IA construit avec Spring AI et Gemini",
-      "ar": "مساعد دردشة بالذكاء الاصطناعي مبني باستخدام Spring AI و Gemini"
+      "en": "Multilingual AI assistant built with Spring AI and the Gemini API",
+      "fr": "Assistant IA multilingue intégré avec Spring AI et l’API Gemini",
+      "ar": "مساعد ذكاء اصطناعي متعدد اللغات مبني باستخدام Spring AI وواجهة Gemini"
     },
     {
-      "en": "Docker setup, Flyway migrations and a GitHub Actions CI pipeline",
-      "fr": "Configuration Docker, migrations Flyway et pipeline CI GitHub Actions",
-      "ar": "إعداد Docker وترحيلات Flyway ومسار CI عبر GitHub Actions"
+      "en": "Persistence with JPA, MySQL and Flyway, Docker, and CI/CD with GitHub Actions",
+      "fr": "Persistance avec JPA, MySQL et Flyway, conteneurisation Docker et CI/CD avec GitHub Actions",
+      "ar": "حفظ البيانات باستخدام JPA وMySQL وFlyway، وDocker، وCI/CD عبر GitHub Actions"
     }
   ],
   "tech": [
     "Spring Boot",
     "Spring Security",
     "JWT",
-    "WebSocket",
-    "MySQL",
-    "Redis",
     "React",
-    "Tailwind CSS",
-    "Docker"
+    "MySQL",
+    "Flyway",
+    "Docker",
+    "CI/CD",
+    "Spring AI",
+    "WebSocket"
   ],
   "github": "https://github.com/Ayoub717542/QuickFixers-FullStack-Gestion-Services",
   "demo": ""

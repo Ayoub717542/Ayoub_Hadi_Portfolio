@@ -1,5 +1,5 @@
 {
-  "title": "SpplyFlow – Logistics Management API",
+  "title": "SupplyFlow – Logistics Management API",
   "year": 2024,
   "featured": false,
   "summary": {
@@ -25,6 +25,6 @@
     }
   ],
   "tech": ["Spring Boot", "Spring Data JPA", "Spring Security", "MapStruct", "Docker Compose", "Swagger"],
-  "github": "https://github.com/Ayoub717542",
+  "github": "https://github.com/Ayoub717542/SupplyFlow-",
   "demo": ""
 }

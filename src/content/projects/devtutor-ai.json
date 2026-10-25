@@ -1,0 +1,42 @@
+{
+  "title": {
+    "en": "DevTutor AI – Programming Tutor Assistant",
+    "fr": "DevTutor AI – Assistant pédagogique en développement",
+    "ar": "DevTutor AI – مساعد تعليمي في البرمجة"
+  },
+  "year": 2026,
+  "order": 1,
+  "featured": true,
+  "summary": {
+    "en": "An AI chat that explains programming concepts, remembers each conversation and answers from your own documents.",
+    "fr": "Un chat IA qui explique les concepts de programmation, garde la mémoire de chaque conversation et répond à partir de vos propres documents.",
+    "ar": "دردشة ذكاء اصطناعي تشرح مفاهيم البرمجة، وتتذكّر كل محادثة، وتجيب انطلاقًا من مستنداتك الخاصة."
+  },
+  "highlights": [
+    {
+      "en": "Conversation management and persistent memory with Spring AI and JDBC",
+      "fr": "Gestion des conversations et mémoire persistante avec Spring AI et JDBC",
+      "ar": "إدارة المحادثات وذاكرة دائمة باستخدام Spring AI وJDBC"
+    },
+    {
+      "en": "Document import and context search in a vector store (RAG)",
+      "fr": "Import de documents et recherche de contexte dans un VectorStore (RAG)",
+      "ar": "استيراد المستندات والبحث عن السياق في قاعدة بيانات متجهية (RAG)"
+    },
+    {
+      "en": "Answers enriched with the documents through QuestionAnswerAdvisor",
+      "fr": "Réponses enrichies par les documents avec QuestionAnswerAdvisor",
+      "ar": "إجابات مدعّمة بمحتوى المستندات عبر QuestionAnswerAdvisor"
+    }
+  ],
+  "tech": [
+    "Java",
+    "Spring Boot",
+    "Spring AI",
+    "Gemini",
+    "MySQL",
+    "RAG"
+  ],
+  "github": "https://github.com/Ayoub717542/DevGuide_AI",
+  "demo": ""
+}

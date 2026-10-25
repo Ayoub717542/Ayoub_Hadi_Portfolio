@@ -1,11 +1,11 @@
 {
   "name": "Hadi Ayoub",
   "role": {
-    "en": "Full-Stack Developer",
-    "fr": "Développeur Full-Stack",
-    "ar": "مطوّر ويب متكامل (Full-Stack)"
+    "en": "Junior Full-Stack Developer",
+    "fr": "Développeur Full-Stack Junior",
+    "ar": "مطوّر Full-Stack مبتدئ"
   },
-  "stack": "Java · Spring Boot · React",
+  "stack": "Java · React · AI",
   "location": {
     "en": "Beni Mellal, Morocco",
     "fr": "Béni Mellal, Maroc",
@@ -18,19 +18,19 @@
     "ar": "وظيفة دائمة · تدريب · عمل حر"
   },
   "bio": {
-    "en": "I'm a junior full-stack developer who turns ideas into reliable web applications. I build secure REST APIs with Java and Spring Boot, and clean, responsive interfaces with React. I learn fast, love clean code, and enjoy shipping real projects from database to UI.",
-    "fr": "Développeur full-stack junior, je transforme des idées en applications web fiables. Je conçois des API REST sécurisées avec Java et Spring Boot, et des interfaces claires et responsives avec React. J'apprends vite, j'aime le code propre et livrer des projets concrets, de la base de données à l'interface.",
-    "ar": "مطوّر ويب متكامل مبتدئ، أحوّل الأفكار إلى تطبيقات ويب موثوقة. أبني واجهات برمجة REST آمنة باستخدام Java وSpring Boot، وواجهات مستخدم نظيفة ومتجاوبة باستخدام React. أتعلّم بسرعة، أحب الكود النظيف، وأستمتع بإنجاز مشاريع حقيقية من قاعدة البيانات إلى الواجهة."
+    "en": "Full-stack developer focused on Java and Spring Boot, with hands-on experience designing REST APIs, JWT authentication, data management and React interfaces. Independent and curious, I'm looking for a junior role where I can contribute to real applications, improve code quality and grow within a technical team.",
+    "fr": "Développeur Full-Stack orienté Java/Spring Boot, avec une expérience pratique dans la conception d’API REST, l’authentification JWT, la gestion de données et le développement d’interfaces React. Autonome et curieux, je cherche un poste junior où je peux contribuer à des applications concrètes, améliorer la qualité du code et progresser au sein d’une équipe technique.",
+    "ar": "مطوّر Full-Stack متخصص في Java وSpring Boot، لديّ خبرة عملية في تصميم واجهات REST، ومصادقة JWT، وإدارة البيانات، وتطوير واجهات React. مستقل وفضولي، أبحث عن وظيفة مبتدئ أساهم فيها في تطبيقات حقيقية، وأحسّن جودة الكود، وأتطوّر داخل فريق تقني."
   },
   "photo": "/images/profile.jpg",
-  "cv": "https://docs.google.com/document/d/1dAoeN-4yXrYV_7v82K91EG_iRKnmlKRxRQlhePkHEu4/edit?usp=sharing",
-  "email": "Ayoubhadi312@gmail.com",
-  "phone": "+212 670211432",
+  "cv": "/cv/Hadi_Ayoub_CV.pdf",
+  "email": "ayoubhadi856@gmail.com",
+  "phone": "+212 670 211 432",
   "github": "https://github.com/Ayoub717542",
   "linkedin": "https://linkedin.com/in/ayoubhadi-pro",
   "languages": [
     { "name": { "en": "Arabic", "fr": "Arabe", "ar": "العربية" }, "level": { "en": "Native", "fr": "Langue maternelle", "ar": "اللغة الأم" } },
     { "name": { "en": "English", "fr": "Anglais", "ar": "الإنجليزية" }, "level": { "en": "Fluent", "fr": "Courant", "ar": "بطلاقة" } },
-    { "name": { "en": "French", "fr": "Français", "ar": "الفرنسية" }, "level": { "en": "Intermediate", "fr": "Intermédiaire", "ar": "متوسط" } }
+    { "name": { "en": "French", "fr": "Français", "ar": "الفرنسية" }, "level": { "en": "Intermediate", "fr": "Moyen", "ar": "متوسط" } }
   ]
 }
