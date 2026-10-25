@@ -1,0 +1,131 @@
+/* Loading screen shown on the first visit (markup in index.html, logic in loader.js). */
+
+#loader {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(55% 45% at 50% 45%, rgba(91, 141, 239, 0.32), transparent 70%),
+    linear-gradient(135deg, #0a0f22 0%, #13215a 50%, #0a0f22 100%);
+  color: #e8ecf8;
+  font-family: Inter, 'IBM Plex Sans Arabic', system-ui, sans-serif;
+  transition: transform 0.9s cubic-bezier(0.76, 0, 0.24, 1);
+  /* safety net: disappears by itself if the script never runs */
+  animation: loader-fallback 0.4s 5s forwards;
+}
+
+/* same dot grid as the site background, fading toward the edges */
+#loader::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.13) 1px, transparent 1px);
+  background-size: 28px 28px;
+  -webkit-mask-image: radial-gradient(65% 55% at 50% 50%, #000, transparent);
+  mask-image: radial-gradient(65% 55% at 50% 50%, #000, transparent);
+}
+
+.loader-content {
+  position: relative;
+  padding: 0 24px;
+  text-align: center;
+  animation: loader-in 0.7s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+.loader-name {
+  margin: 0;
+  font: 800 clamp(30px, 4.2vw, 40px) / 1.05 'Bricolage Grotesque', 'IBM Plex Sans Arabic', system-ui, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.loader-role {
+  margin: 10px 0 0;
+  font: 700 clamp(17px, 2.2vw, 22px) / 1.3 'Bricolage Grotesque', 'IBM Plex Sans Arabic', system-ui, sans-serif;
+  background: linear-gradient(90deg, #5b8def, #22d3ee);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.loader-stack {
+  margin: 14px 0 0;
+  font: 400 13px 'JetBrains Mono', ui-monospace, monospace;
+  color: #9aa6c8;
+}
+
+.loader-bar {
+  width: min(320px, 70vw);
+  height: 4px;
+  margin: 34px auto 0;
+  border-radius: 99px;
+  background: rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+}
+.loader-bar span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6, #22d3ee);
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.6);
+  transform: scaleX(0);
+  transform-origin: left;
+}
+[dir='rtl'] .loader-bar span {
+  transform-origin: right;
+}
+
+.loader-status {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  width: min(320px, 70vw);
+  margin: 12px auto 0;
+  font: 400 12px 'JetBrains Mono', 'IBM Plex Sans Arabic', ui-monospace, monospace;
+  color: #9aa6c8;
+}
+.loader-step::before {
+  content: '› ';
+  color: #5b8def;
+}
+.loader-pct {
+  color: #e8ecf8;
+}
+
+.loader-particle {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #7aa2ff;
+  opacity: 0;
+  animation: loader-float linear infinite;
+}
+
+/* exit: the text fades up, then the whole screen lifts like a curtain */
+#loader.loader-hide {
+  transform: translateY(-100%);
+}
+#loader.loader-hide .loader-content {
+  opacity: 0;
+  transform: translateY(-16px);
+}
+
+@keyframes loader-in {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes loader-float {
+  0% { transform: translateY(20px); opacity: 0; }
+  25% { opacity: 0.7; }
+  100% { transform: translateY(-90px); opacity: 0; }
+}
+@keyframes loader-fallback {
+  to { opacity: 0; visibility: hidden; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #loader { display: none; }
+}

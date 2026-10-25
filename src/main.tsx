@@ -11,3 +11,6 @@ createRoot(document.getElementById('root')!).render(
     </LangProvider>
   </StrictMode>,
 );
+
+// Tell the loading screen (public/loader.js) that the page and fonts are ready.
+document.fonts.ready.then(() => document.dispatchEvent(new Event('app-ready')));

@@ -14,8 +14,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <!-- Loading screen (first visit only): styles in public/loader.css, logic in public/loader.js -->
+    <link rel="stylesheet" href="/loader.css" />
   </head>
   <body>
+    <div id="loader" aria-hidden="true">
+      <div class="loader-content">
+        <p class="loader-name">Hadi Ayoub</p>
+        <p class="loader-role">Développeur Full-Stack Junior</p>
+        <p class="loader-stack">Java · Spring Boot · React · AI</p>
+        <div class="loader-bar"><span></span></div>
+        <p class="loader-status"><span class="loader-step"></span><span class="loader-pct">0%</span></p>
+      </div>
+    </div>
+    <script src="/loader.js"></script>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
