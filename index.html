@@ -9,7 +9,13 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
     <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <meta name="theme-color" content="#f5f2ec" media="(prefers-color-scheme: light)" />
+    <script>
+      // Day or night before the page shows (no white flash): saved choice, else the system setting.
+      // The switch itself is src/components/ThemeToggle.tsx.
+      var theme; try { theme = localStorage.getItem('theme'); } catch (e) {}
+      document.documentElement.dataset.theme = theme || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    </script>
+    <meta name="theme-color" content="#e7e3db" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#131211" media="(prefers-color-scheme: dark)" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

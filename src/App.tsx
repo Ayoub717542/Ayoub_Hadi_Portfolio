@@ -6,6 +6,7 @@ import { Projects } from './components/Projects';
 import { Contact } from './components/Contact';
 import { usePaging } from './components/usePaging';
 import { Background } from './components/Background';
+import { ChatBot } from './components/ChatBot';
 
 export default function App() {
   usePaging();
@@ -21,6 +22,7 @@ export default function App() {
         <Projects />
         <Contact />
       </main>
+      <ChatBot />
     </div>
   );
 }

@@ -5,11 +5,21 @@
 
 /* ---- Design tokens: change colors and fonts here ---- */
 @theme {
-  --color-bg: #f5f2ec;      /* warm paper */
-  --color-ink: #161514;     /* text */
-  --color-muted: #6b665e;   /* secondary text */
-  --color-line: #dcd6cb;    /* borders */
+  --color-bg: #e7e3db;      /* soft warm stone */
+  --color-ink: #1f1d1a;     /* text */
+  --color-muted: #5c574f;   /* secondary text */
+  --color-line: #cdc6b9;    /* borders */
   --color-accent: #1e40af;  /* the one accent color (dark blue) */
+
+  /* Chatbot terminal (ChatBot.tsx): light terminal by day, dark terminal by night */
+  --color-chat-bg: #f3f1ec;     /* window */
+  --color-chat-bar: #e9e5dd;    /* title bar and input bar */
+  --color-chat-text: #24292f;
+  --color-chat-dim: #6e6a63;    /* hints, placeholder */
+  --color-chat-line: #d0c9bc;   /* borders */
+  --color-chat-blue: #0969da;   /* visitor's "> " */
+  --color-chat-green: #1a7f37;  /* "✓ ready", ">_", AI badge */
+  --color-chat-purple: #8250df; /* assistant's "◆ " */
 
   /* Arabic font is in every stack: Latin text keeps its font, Arabic uses IBM Plex Sans Arabic */
   --font-sans: "Inter", "IBM Plex Sans Arabic", system-ui, sans-serif;
@@ -17,15 +27,23 @@
   --font-mono: "JetBrains Mono", "IBM Plex Sans Arabic", ui-monospace, monospace;
 }
 
-/* Dark mode follows the visitor's system setting */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-bg: #131211;
-    --color-ink: #ece8e1;
-    --color-muted: #9c968c;
-    --color-line: #2c2a27;
-    --color-accent: #5b8def;
-  }
+/* Dark mode: on when <html data-theme="dark">. Starts from the visitor's saved choice or
+   system setting (script in index.html), then the day/night switch changes it (ThemeToggle.tsx). */
+:root[data-theme="dark"] {
+  --color-bg: #131211;
+  --color-ink: #ece8e1;
+  --color-muted: #9c968c;
+  --color-line: #2c2a27;
+  --color-accent: #5b8def;
+  --color-chat-bg: #0d1117;
+  --color-chat-bar: #161b22;
+  --color-chat-text: #e6edf3;
+  --color-chat-dim: #8b949e;
+  --color-chat-line: #30363d;
+  --color-chat-blue: #58a6ff;
+  --color-chat-green: #3fb950;
+  --color-chat-purple: #d2a8ff;
+  color-scheme: dark;
 }
 
 @layer base {
@@ -112,4 +130,58 @@
 }
 .lang-switch {
   view-transition-name: lang-switch;
+}
+
+/* Chatbot (src/components/ChatBot.tsx): window pops in, cursor blinks,
+   a glow ring pulses around the button. Still for reduced-motion visitors. */
+@media (prefers-reduced-motion: no-preference) {
+  .chat-pop {
+    animation: chat-pop 0.25s ease-out;
+    transform-origin: bottom right;
+  }
+  .chat-cursor {
+    animation: chat-blink 1s steps(1) infinite;
+  }
+  .chat-ring {
+    animation: chat-ring 2.4s ease-out infinite;
+  }
+}
+@keyframes chat-pop {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.95);
+  }
+}
+@keyframes chat-blink {
+  50% {
+    opacity: 0;
+  }
+}
+@keyframes chat-ring {
+  from {
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--color-accent) 60%, transparent);
+  }
+  to {
+    box-shadow: 0 0 0 18px transparent;
+  }
+}
+
+/* Day/night switch: the new theme grows as a circle from the switch (see ThemeToggle.tsx),
+   so the default cross-fade is turned off while it runs. */
+html.theme-switch::view-transition-old(root),
+html.theme-switch::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+/* The sun / moon in the switch knob spins in when it changes */
+@media (prefers-reduced-motion: no-preference) {
+  .theme-icon {
+    animation: theme-spin 0.5s ease-out;
+  }
+}
+@keyframes theme-spin {
+  from {
+    opacity: 0;
+    transform: rotate(-180deg) scale(0.4);
+  }
 }

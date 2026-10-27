@@ -28,7 +28,7 @@ export function Background() {
     const canvas = canvasRef.current!;
     const ctx = canvas.getContext('2d')!;
     const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-    const darkMode = window.matchMedia('(prefers-color-scheme: dark)');
+    const themeObserver = new MutationObserver(() => onThemeChange()); // day/night switch (ThemeToggle.tsx)
 
     let width = 0;
     let height = 0;
@@ -172,7 +172,7 @@ export function Background() {
     window.addEventListener('mousemove', onMouseMove);
     document.addEventListener('mouseleave', onMouseLeave);
     document.addEventListener('visibilitychange', onVisibility);
-    darkMode.addEventListener('change', onThemeChange);
+    themeObserver.observe(document.documentElement, { attributeFilter: ['data-theme'] });
     reduceMotion.addEventListener('change', start);
 
     return () => {
@@ -181,7 +181,7 @@ export function Background() {
       window.removeEventListener('mousemove', onMouseMove);
       document.removeEventListener('mouseleave', onMouseLeave);
       document.removeEventListener('visibilitychange', onVisibility);
-      darkMode.removeEventListener('change', onThemeChange);
+      themeObserver.disconnect();
       reduceMotion.removeEventListener('change', start);
     };
   }, []);

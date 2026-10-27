@@ -37,17 +37,6 @@
   loader.querySelector('.loader-role').textContent = text.role;
   if (lang === 'ar') content.dir = 'rtl';
 
-  // floating particles
-  for (var i = 0; i < 16; i++) {
-    var p = document.createElement('span');
-    p.className = 'loader-particle';
-    p.style.left = Math.random() * 100 + '%';
-    p.style.top = 20 + Math.random() * 75 + '%';
-    p.style.animationDuration = 4 + Math.random() * 5 + 's';
-    p.style.animationDelay = -Math.random() * 6 + 's';
-    loader.appendChild(p);
-  }
-
   var DURATION = 3000;
   var bar = loader.querySelector('.loader-bar span');
   var pct = loader.querySelector('.loader-pct');

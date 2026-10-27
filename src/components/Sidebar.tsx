@@ -5,6 +5,7 @@ import { FileText, Github, Linkedin, Mail } from 'lucide-react';
 import { profile } from '../content';
 import { useLang, type UiKey } from '../i18n';
 import { LanguageSwitcher } from './LanguageSwitcher';
+import { ThemeToggle } from './ThemeToggle';
 import { ExternalLink } from './ui';
 
 const sections: UiKey[] = ['about', 'skills', 'experience', 'projects', 'contact'];
@@ -100,6 +101,7 @@ export function Sidebar() {
 
         <div className="flex flex-wrap items-center gap-x-6 gap-y-4">
           <LanguageSwitcher />
+          <ThemeToggle />
 
           <ul className="flex gap-5 text-muted">
             <li>

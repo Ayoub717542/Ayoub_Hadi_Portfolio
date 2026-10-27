@@ -33,6 +33,7 @@ const ui = {
     contactText: "I'm looking for a full-time job, an internship or freelance work. Send me a message — I usually reply within a day.",
     builtBy: 'Designed & built by',
     switchLanguage: 'Change language',
+    switchTheme: 'Day / night mode',
   },
   fr: {
     about: 'À propos',
@@ -53,6 +54,7 @@ const ui = {
     contactText: "Je recherche un CDI, un stage ou une mission freelance. Envoyez-moi un message — je réponds généralement sous 24 h.",
     builtBy: 'Conçu et développé par',
     switchLanguage: 'Changer de langue',
+    switchTheme: 'Mode jour / nuit',
   },
   ar: {
     about: 'نبذة عني',
@@ -73,6 +75,7 @@ const ui = {
     contactText: 'أبحث عن وظيفة دائمة أو تدريب أو عمل حر. راسلني — عادةً أردّ خلال يوم واحد.',
     builtBy: 'تصميم وتطوير',
     switchLanguage: 'تغيير اللغة',
+    switchTheme: 'الوضع النهاري / الليلي',
   },
 } satisfies Record<Lang, Record<string, string>>;
 
